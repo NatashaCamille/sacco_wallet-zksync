@@ -1,0 +1,33 @@
+{
+    "abi": [
+        {
+            "inputs": [
+                {"type": "string", "name": "name"},
+                {"type": "string", "name": "email"},
+                {"type": "string", "name": "phoneNumber"},
+                {"type": "string", "name": "membershipType"}
+            ],
+            "name": "register",
+            "type": "function",
+            "stateMutability": "nonpayable"
+        },
+        {
+            "inputs": [
+                {"type": "address", "name": "userAddress"}
+            ],
+            "name": "isRegistered",
+            "outputs": [{"type": "bool"}],
+            "type": "function",
+            "stateMutability": "view"
+        },
+        {
+            "inputs": [
+                {"type": "address", "name": "userAddress"}
+            ],
+            "name": "login",
+            "outputs": [{"type": "bool"}],
+            "type": "function",
+            "stateMutability": "view"
+        }
+    ]
+}
